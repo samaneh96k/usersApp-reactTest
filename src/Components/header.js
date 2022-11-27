@@ -1,12 +1,27 @@
-import React from 'react'
+import React from "react";
 
 export const Header = () => {
   return (
-      <div style={{display:'flex',alignItems:"center",justifyContent:"space-between",width:"30%",paddingLeft:"5%"}}>
-          <h1><a href='/'>Users</a></h1>|
-          <h2><a href='/users'>Show Users</a></h2>
-          <h2><a href='/sign-in'>Sign In</a></h2>
+    <div
+    className="header"
+    >
+     
+   <div className="logo-item">
+   <h1 >
+          <a href="/">Users</a>
+        </h1> 
+        <span>|</span>
+   </div>
+    
+      <div className="menu-item">
+        <h4>
+          <a href="/users">Show Users</a>
+        </h4>
+        <h4>
+          <a href="/sign-in">Sign In</a>
+        </h4>
+      </div>
     </div>
-  )
-}
-export default Header
+  );
+};
+export default Header;
