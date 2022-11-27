@@ -1,8 +1,3 @@
-import { useState } from "react";
-
-
-
-
 
   const usersData = [];
 export const getData = async () => {
@@ -23,12 +18,3 @@ export const getData = async () => {
 }
 
 
-export const Data = () => {
-    const users=[]
-const userData = getData()
-userData.then(d => { d.map(user => users.push(user))});
-console.log(users)
-  
-}
-
-Data()
