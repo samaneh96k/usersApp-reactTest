@@ -12,6 +12,7 @@ export const getData = async () => {
             username: d.username,
             email: d.email
         })
+        return usersData;
     })
 
     
